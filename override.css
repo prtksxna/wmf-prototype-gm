@@ -71,6 +71,28 @@
   color: #777;
 }
 
+.mini dd {
+  font-size: 3rem !important;
+}
+
+.mini dt {
+  font-size: 1rem;
+  display: block !important;
+  height: 30px;
+}
+
+.mini dd img {
+  height: 30px !important;
+}
+
+.mini dd span {
+  display: none !important;
+}
+
+.breakdown {
+  margin-top: 30px;
+}
+
 .h3-button {
   margin-top: 18px;
 }
