@@ -40,6 +40,7 @@
 #stats dt {
   color: #777;
   text-transform: uppercase;
+  font-variant: small-caps;
 
 }
 
@@ -86,6 +87,25 @@
 }
 
 .mini dd span {
+  display: none !important;
+}
+
+.med dd {
+  font-size: 4rem !important;
+}
+
+.med dt {
+  font-size: 1.2rem;
+  display: block !important;
+  height: 30px;
+}
+
+.med dd img {
+  margin-top: -10px;
+  height: 30px !important;
+}
+
+.med dd span {
   display: none !important;
 }
 
