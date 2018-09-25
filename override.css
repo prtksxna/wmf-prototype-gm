@@ -1,3 +1,6 @@
+.page-header {
+  border: none !important;
+}
 .page-header h1 {
   font-weight: 800;
 }
@@ -19,8 +22,13 @@
   border-bottom: 1px dashed;
 }
 
+time {
+  font-weight: 500;
+  font-style: italic;
+}
+
 .header-buttons {
-  margin-top: 8px;
+  padding-top: 27px;
 }
 
 .event-stats-status {
