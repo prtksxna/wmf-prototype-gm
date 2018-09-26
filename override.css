@@ -63,6 +63,7 @@ time {
 
 #stats dd span {
   display: block;
+  height: 100px;
   opacity: 0;
   font-weight: normal;
   font-size: 1.1rem;
@@ -164,7 +165,7 @@ time {
 }
 
 h3 {
-  margin-top: 70px !important;
+  margin-top: 0px !important;
   font-size: 3rem !important;
   color: #c8ccd1;
   font-weight: 100 !important;
