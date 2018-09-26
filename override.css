@@ -67,7 +67,7 @@ time {
   font-weight: normal;
   font-size: 1.1rem;
   color: #aaa;
-  transition: 200ms all ease;
+  transition: 200ms opacity ease;
 }
 
 #stats dl:hover span {
@@ -111,10 +111,6 @@ time {
 .med dd img {
   margin-top: -10px;
   height: 30px !important;
-}
-
-.med dd span {
-  display: none !important;
 }
 
 .breakdown {
