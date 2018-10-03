@@ -21,6 +21,8 @@
   <script type="text/javascript" src="./res/bootstrap.min.js"></script>
   <script type="text/javascript" src="./res/moment.min.js"></script>
   <script type="text/javascript" src="./res/daterangepicker.min.js"></script>
+
+  <script type="text/javascript" src="download.js"></script>
   <link rel="stylesheet" type="text/css" media="screen" href="./res/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./res/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="./res/daterangepicker.min.css">
@@ -420,7 +422,7 @@
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                 <li><a href="#">Event summary</a></li>
-                <li><a href="#">Pages created</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModal">Pages created</a></li>
                 <li><a href="#">Pages improved</a></li>
                 <li><a href="#">Files uploaded</a></li>
                 <li><a href="#">Wikidata contributions</a></li>
@@ -717,6 +719,60 @@
         </div>
 
       </section><!-- #stats -->
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Pages created report</h4>
+            </div>
+            <div class="modal-body">
+              <h5>Toggle filters to be applied</h5>
+              <ul>
+                <li>
+                  <input type="checkbox" name="" value="" id="par">
+                  <label for="par">Participants</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" value="" id="cat">
+                  <label for="cat">Categories</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" value="" id="wor">
+                  <label for="wor">Worklist</label>
+                </li>
+              </ul>
+
+              <h5>Wikis</h5>
+              <select class="" name="">
+                <option value="">All</option>
+                <option value="">English Wikipedia</option>
+                <option value="">Konkani Wikipedia</option>
+                <option value="">Marathi Wikipedia</option>
+                <option value="">Wikidata</option>
+                <option value="">Commons</option>
+              </select>
+
+              <h5>Namespace</h5>
+              <select class="" name="">
+                <option value="">Main</option>
+                <option value="">Draft</option>
+                <option value="">Talk</option>
+                <option value="">File</option>
+              </select>
+            </div>
+            <div class="modal-footer">
+              <button id="wikitext-report" type="button" class="btn btn-default">Get Wikitext</button>
+              <button id="download-report" type="button" class="btn btn-primary" data-loading-text="Loading...">Download</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
     </div>
   </main>
