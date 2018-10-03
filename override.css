@@ -3,6 +3,12 @@
 }
 .page-header h1 {
   font-weight: 800;
+  margin-top: 1rem;
+}
+.page-header h6 {
+  text-transform: uppercase;
+  font-variant: small-caps;
+  margin: 0;
 }
 
 .page-header h1 span {
@@ -28,7 +34,7 @@ time {
 }
 
 .header-buttons {
-  padding-top: 27px;
+  padding-top: 30px;
 }
 
 .event-stats-status {
@@ -59,10 +65,11 @@ time {
 
 #stats dd img {
   height: 60px;
+  display: none;
 }
 
 #stats dd span {
-  display: block;
+  display: none;
   height: 100px;
   opacity: 0;
   font-weight: normal;
@@ -165,7 +172,7 @@ time {
 }
 
 h3 {
-  margin-top: 0px !important;
+  margin-top: 5rem !important;
   font-size: 3rem !important;
   color: #c8ccd1;
   font-weight: 100 !important;
