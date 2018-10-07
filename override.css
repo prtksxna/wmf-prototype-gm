@@ -190,3 +190,13 @@ h3 {
   font-weight: normal;
   padding-left: 1rem;
 }
+
+/* Edit */
+.participant-row {
+  margin-top: 1rem;
+}
+
+.catcat {
+  width: 530px;
+  padding-right: 0;
+}
