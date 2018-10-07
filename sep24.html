@@ -423,7 +423,7 @@
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                 <li><a href="#">Event summary</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#myModal">Pages created</a></li>
-                <li><a href="#">Pages improved</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myOtherModal">Pages improved</a></li>
                 <li><a href="#">Files uploaded</a></li>
                 <li><a href="#">Wikidata contributions</a></li>
                 <li><a href="#">Revision list</a></li>
@@ -462,6 +462,9 @@
         <div class="col-sm-4">
           <strong>Wikis:</strong>
           <a href="#">*.wikipedia</a>, <a href="#">commons</a> and <a href="#">wikidata</a>
+          <br>
+          <strong>Categories:</strong>
+          <a href="#">Atomism</a>, <a href="#">Mudras</a>, <a href="#">Samkhya</a> and <a href="#">24 more</a>.
         </div>
 
         <div class="clearfix"></div>
@@ -727,28 +730,28 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Pages created report</h4>
+              <h4 class="modal-title" id="myModalLabel">‘Pages Created’ report</h4>
             </div>
             <div class="modal-body">
-              <h5>Toggle filters to be applied</h5>
+              <h5>Select filters to apply for report</h5>
               <ul>
                 <li>
-                  <input type="checkbox" name="" value="" id="par">
-                  <label for="par">Participants</label>
+                  <input type="checkbox" name="" value="" id="par" checked>
+                  <label for="par">Participants list</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="" value="" id="cat">
+                  <input type="checkbox" name="" value="" id="cat" checked>
                   <label for="cat">Categories</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="" value="" id="wor">
+                  <input type="checkbox" name="" value="" id="wor" checked>
                   <label for="wor">Worklist</label>
                 </li>
               </ul>
 
               <h5>Wikis</h5>
               <select class="" name="">
-                <option value="">All</option>
+                <option value="">All specified for event</option>
                 <option value="">English Wikipedia</option>
                 <option value="">Konkani Wikipedia</option>
                 <option value="">Marathi Wikipedia</option>
@@ -756,17 +759,35 @@
                 <option value="">Commons</option>
               </select>
 
-              <h5>Namespace</h5>
+              <!-- <h5>Namespace</h5>
               <select class="" name="">
                 <option value="">Main</option>
                 <option value="">Draft</option>
                 <option value="">Talk</option>
                 <option value="">File</option>
-              </select>
+              </select> -->
             </div>
             <div class="modal-footer">
               <button id="wikitext-report" type="button" class="btn btn-default">Get Wikitext</button>
-              <button id="download-report" type="button" class="btn btn-primary" data-loading-text="Loading...">Download</button>
+              <button id="download-report" type="button" class="btn btn-default" data-loading-text="Loading...">Download CSV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="myOtherModal" tabindex="-1" role="dialog" aria-labelledby="myOtherModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">‘Pages Improved’ report</h4>
+            </div>
+            <div class="modal-body">
+              Please select a format for the report.
+            </div>
+            <div class="modal-footer">
+              <button id="wikitext-report" type="button" class="btn btn-default">Get Wikitext</button>
+              <button id="download-report" type="button" class="btn btn-default" data-loading-text="Loading...">Download CSV</button>
             </div>
           </div>
         </div>
