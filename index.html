@@ -4,7 +4,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
-    1Lib1Ref January -             Grant Metrics
+    Name of Event - Grant Metrics
   </title>
   <link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="https://tools.wmflabs.org/grantmetrics/favicon.ico">
 
@@ -21,11 +21,15 @@
   <script type="text/javascript" src="./res/bootstrap.min.js"></script>
   <script type="text/javascript" src="./res/moment.min.js"></script>
   <script type="text/javascript" src="./res/daterangepicker.min.js"></script>
+
+  <script type="text/javascript" src="download.js"></script>
   <link rel="stylesheet" type="text/css" media="screen" href="./res/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./res/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="./res/daterangepicker.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="./res/app.1e37ea7c.css">
   <link rel="stylesheet" href="override.css">
+
+  <!--<link rel="stylesheet" href="wire.css">-->
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -42,10 +46,10 @@
             <a href="https://tools.wmflabs.org/grantmetrics/programs">My programs</a>
           </li>
           <li>
-            <a href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign">1Lib1Ref Campaign</a>
+            <a href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign">Name of program</a>
           </li>
           <li class="active">
-            1Lib1Ref January
+            Name of Event
           </li>
         </ol>
       </span>
@@ -399,60 +403,235 @@
 
 
   <main class="app-body">
-    <div class="alert-container container">
-    </div>
-
     <div class="container">
+
       <div class="page-header">
 
-        <div class="pull-right text-right header-buttons">
-          <div class="btn-group" role="group">
-            <button type="button" name="button" class="btn btn-default">Edit event</button>
-            <button type="button" name="button" class="btn btn-default">Download</button>
-            <button type="button" class="btn btn-primary event-process-btn" data-event-id="141">
-              Calculate totals
-            </button>
-          </div>
-          <div class="event-stats-status">
-            last updated about 3 days ago
+        <div class="col-sm-8">
+          <h6>event summary</h6>
+          <h1>Name of Event</h1>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="header-buttons">
+            <div class="btn-group" role="group">
+              <a href="edit.html" type="button" name="button" class="btn btn-default">Edit event</a>
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Download reports
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Event summary</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModal">Pages created</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myOtherModal">Pages improved</a></li>
+                <li><a href="#">Files uploaded</a></li>
+                <li><a href="#">Wikidata contributions</a></li>
+                <li><a href="#">Revision list</a></li>
+              </ul>
+
+              <button type="button" class="btn btn-primary event-process-btn" data-event-id="141">
+                Update totals
+              </button>
+            </div>
+            <div class="event-stats-status pull-right">
+              last updated about 3 days ago &nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
           </div>
         </div>
-        <h1>
-          1Lib1Ref
-          &middot;
-          <span>
-            8 Aug - 6 Oct 2017
-          </span>
-        </h1>
-        <p>
-          <span>Editathon</span> at
-          <a href="#">Goa State Library, Panjim</a>
-          for <span>GLAM</span> on
-          <a href="#">gom.wikipedia</a>, <a href="#">mr.wikipedia</a> and <a href="#">en.wikipedia</a>
-        </p>
+
+        <div class="clearfix"></div>
+
+        <br>
+
+        <div class="col-sm-4">
+          <p>
+            from <time datetime="2001-05-15T19:00">1 Apr 2016, 10:00</time><br> to
+            <time datetime="2001-05-15T19:00">3 April 2016, 17:00</time> <small>(America/New York)</small><br>
+            in <a href="#">Venue</a>
+            at <a href="#">Location</a>
+          </p>
+        </div>
+
+        <div class="col-sm-4">
+          <p>
+            <span>Content drive</span><br>
+            with <span>GLAM</span> & <span>Directorate of Museums</span>
+          </p>
+        </div>
+
+        <div class="col-sm-4">
+          <strong>Wikis:</strong>
+          <a href="#">*.wikipedia</a>, <a href="#">commons</a> and <a href="#">wikidata</a>
+          <br>
+          <strong>Categories:</strong>
+          <a href="#">Atomism</a>, <a href="#">Mudras</a>, <a href="#">Samkhya</a> and <a href="#">24 more</a>.
+        </div>
+
+        <div class="clearfix"></div>
+
+        <br>
+
+        <div class="col-sm-8">
+          <p>A short event description if required. Phasellus pulvinar pretium elit, sit amet pellentesque augue viverra ac. Mauris fermentum mauris neque, eu interdum urna mattis scelerisque. Pellentesque in magna nunc. Sed pulvinar scelerisque elit nec bibendum. Vivamus faucibus ligula vel ipsum hendrerit consectetur. Vivamus rutrum sagittis convallis. Pellentesque ex felis, ullamcorper eget porta ultrices, molestie vitae massa. Donec interdum massa non nisi tempus, ut semper est aliquam.</p>
+        </div>
+
       </div>
 
-      <section id="stats">
+      <section id="stats" class="med">
         <div class="col-sm-12">
-          <p>A short event description if required. Phasellus pulvinar pretium elit, sit amet pellentesque augue viverra ac. Mauris fermentum mauris neque, eu interdum urna mattis scelerisque. Pellentesque in magna nunc. Sed pulvinar scelerisque elit nec bibendum. Vivamus faucibus ligula vel ipsum hendrerit consectetur. Vivamus rutrum sagittis convallis. Pellentesque ex felis, ullamcorper eget porta ultrices, molestie vitae massa. Donec interdum massa non nisi tempus, ut semper est aliquam.</p>
           <hr>
-
-          <div class="pull-right text-right header-buttons">
-            <button type="button" name="button" class="btn btn-default btn-sm h3-button">Edit participants</button>
-          </div>
-          <h3>Participants</h3>
+          <h3>Contributions</h3>
         </div>
-        <div class="col-sm-3">
+
+        <div class="totals">
+          <div class="col-sm-2">
+            <dl>
+              <dt><br>Pages created</dt>
+              <dd>
+                61
+              </dd>
+            </dl>
+          </div>
+          <div class="col-sm-2">
+            <dl>
+              <dt><br>Pages improved</dt>
+              <dd>
+                732
+              </dd>
+            </dl>
+          </div>
+          <div class="col-sm-2">
+            <dl>
+              <dt><br>Edits</dt>
+              <dd>
+                90k
+              </dd>
+            </dl>
+          </div>
+          <div class="col-sm-2">
+            <dl>
+              <dt><br>Words added</dt>
+              <dd>
+                3m
+              </dd>
+            </dl>
+          </div>
+          <div class="col-sm-2">
+            <dl>
+              <dt><br>Files uploaded</dt>
+              <dd>
+                3.8k
+              </dd>
+            </dl>
+          </div>
+          <div class="col-sm-2">
+            <dl>
+              <dt><br>Bytes changed</dt>
+              <dd class="pos">
+                +34m
+              </dd>
+            </dl>
+          </div>
+          <div class="clearfix"></div>
+          <div class="col-sm-2">
+            <dl>
+              <dt>Wikidata items created</dt>
+              <dd>
+                55
+              </dd>
+            </dl>
+          </div>
+          <div class="col-sm-2">
+            <dl>
+              <dt>Wikidata claims <br> added</dt>
+              <dd>
+                231
+              </dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="col-sm-12">
+          <h3>Impact</h3>
+        </div>
+
+        <div class="col-sm-2">
           <dl>
-            <dt>Number of participants</dt>
+            <dt>Views to pages created</dt>
             <dd>
-              43
+              42k
+              <span>Views to pages that were created from the time they were created, till date.</span>
             </dd>
           </dl>
         </div>
-        <div class="col-sm-3">
+
+        <div class="col-sm-2">
           <dl>
-            <dt>New editors</dt>
+            <dt>Views to pages improved</dt>
+            <dd>
+              992k
+              <span>Views to pages that were improved from the time of the event, till date.</span>
+            </dd>
+          </dl>
+        </div>
+
+        <div class="col-sm-2">
+          <dl>
+            <dt>Views to uploaded files</dt>
+            <dd>
+              5k
+              <span>Views to files that were uploaded.</span>
+            </dd>
+          </dl>
+        </div>
+
+        <div class="col-sm-2">
+          <dl>
+            <dt>Pages with uploaded files</dt>
+            <dd>
+              428
+            </dd>
+          </dl>
+        </div>
+
+        <div class="col-sm-2">
+          <dl>
+            <dt>Plays to uploaded audio/video</dt>
+            <dd>
+              73
+            </dd>
+          </dl>
+        </div>
+
+        <div class="col-sm-2">
+          <dl>
+            <dt>New page survival rate</dt>
+            <dd>
+              88%
+              <img src="donut3.png" alt="">
+              <span>Main space only</span>
+            </dd>
+          </dl>
+        </div>
+
+
+        <div class="clearfix"></div>
+
+        <div class="col-sm-12">
+          <h3>Participation</h3>
+        </div>
+        <div class="col-sm-2">
+          <dl>
+            <dt><br>Participants</dt>
+            <dd>
+              43
+              <span> From participant list, if provided, or if not derived from event activity</span>
+            </dd>
+          </dl>
+        </div>
+        <div class="col-sm-2">
+          <dl>
+            <dt><br>New editors</dt>
             <dd>
               22%
               <img src="donut.png" alt="">
@@ -460,121 +639,161 @@
             </dd>
           </dl>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-2">
           <dl>
-            <dt>7-day retention</dt>
+            <dt><br>7-day retention</dt>
             <dd>
               13
               <span>The number of new editors who make at least one edit, in any Wikimedia project (in any namespace), between 7 days after the event and the time that the report is run.</span>
             </dd>
           </dl>
         </div>
-
-        <div class="clearfix"></div>
-
-        <div class="col-sm-12">
-          <h3>Impact</h3>
-        </div>
-
-        <div class="col-sm-3">
+        <div class="col-sm-2">
           <dl>
-            <dt>Page survival rate</dt>
+            <dt><br>% Women (estimated)</dt>
             <dd>
-              88%
-            </dd>
-          </dl>
-        </div>
-
-        <div class="col-sm-3">
-          <dl>
-            <dt>Views to pages created</dt>
-            <dd>
-              4.3k
-              <span>Views to pages that were created from the time they were created, till date.</span>
-            </dd>
-          </dl>
-        </div>
-
-        <div class="col-sm-3">
-          <dl>
-            <dt>Views to pages improved</dt>
-            <dd>
-              88.3k
-              <span>Views to pages that were improved from the time of the event, till date.</span>
+              29%
+              <img src="donut.png" alt="">
+              <span>Manually entered by the organizer based on a visual or other survey.</span>
             </dd>
           </dl>
         </div>
 
         <div class="clearfix"></div>
 
-
         <div class="col-sm-12">
-          <div class="pull-right text-right header-buttons">
-            <button type="button" name="button" class="btn btn-default btn-sm h3-button-other">View all data</button>
-          </div>
-          <h3>Contributions</h3>
+          <h3>Per-wiki metrics</h3>
         </div>
 
-        <div class="totals">
-          <div class="col-sm-3">
-            <dl>
-              <dt>Pages created</dt>
-              <dd>
-                61
-                <span>A content page is a page in either the main or file namespace.</span>
-              </dd>
-            </dl>
-          </div>
-          <div class="col-sm-3">
-            <dl>
-              <dt>Pages improved</dt>
-              <dd>
-                732
-                <span>A content page is a page in either the main or file namespace.</span>
-              </dd>
-            </dl>
-          </div>
-          <div class="col-sm-3">
-            <dl>
-              <dt>Edits</dt>
-              <dd>
-                90,049
-              </dd>
-            </dl>
-          </div>
+        <div class="col-sm-3 th zebra"><br>Wiki</div>
+        <div class="col-sm-1 th">Pages created</div>
+        <div class="col-sm-1 th"><br>Views</div>
+        <div class="col-sm-1 th">Survival rate</div>
+        <div class="col-sm-1 th zebra">Pages improved</div>
+        <div class="col-sm-1 th zebra"><br>Views</div>
+        <div class="col-sm-1 th"><br>Edits</div>
+        <div class="col-sm-1 th">Words added</div>
+        <div class="col-sm-1 th">Bytes changed</div>
+        <div class="col-sm-1 th"><br>Uploads</div>
+
+        <div class="clearfix"></div>
+
+        <div class="trow">
+          <div class="col-sm-3 td zebra"><a href="https://gom.wikipedia.org/">gom.wikipedia</a></div>
+          <div class="col-sm-1 td">30 <span>created</span></div>
+          <div class="col-sm-1 td">90 <span>views</span></div>
+          <div class="col-sm-1 td">79% <span>survival</span></div>
+          <div class="col-sm-1 td zebra">320 <span>improved</span></div>
+          <div class="col-sm-1 td zebra">960 <span>views</span></div>
+          <div class="col-sm-1 td">4,342 <span>edits</span></div>
+          <div class="col-sm-1 td">11,392 <span>words</span></div>
+          <div class="col-sm-1 td">+83k <span>bytes</span></div>
+          <div class="col-sm-1 td">4 <span>uploads</span></div>
         </div>
 
-        <div class="col-sm-12 breakdown">
-          <table class="table table-hover">
-            <tr>
-              <th>Wiki</th>
-              <th>Pages created</th>
-              <th>Pages improved</th>
-              <th>Edits</th>
-            </tr>
-            <tr>
-              <td>gom.wikipedia</td>
-              <td>30</td>
-              <td>320</td>
-              <td>43,382</td>
-            </tr>
-            <tr>
-              <td>mr.wikipedia</td>
-              <td>12</td>
-              <td>126</td>
-              <td>12,530</td>
-            </tr>
-            <tr>
-              <td>en.wikipedia</td>
-              <td>19</td>
-              <td>188</td>
-              <td>17,882</td>
-            </tr>
+        <div class="clearfix"></div>
 
-          </table>
+        <div class="trow">
+          <div class="col-sm-3 td zebra"><a href="https://mr.wikipedia.org/">mr.wikipedia</a></div>
+          <div class="col-sm-1 td">12 <span>created</span></div>
+          <div class="col-sm-1 td">36 <span>views</span></div>
+          <div class="col-sm-1 td">89% <span>survival</span></div>
+          <div class="col-sm-1 td zebra">126 <span>improved</span></div>
+          <div class="col-sm-1 td zebra">372 <span>views</span></div>
+          <div class="col-sm-1 td">1,253 <span>edits</span></div>
+          <div class="col-sm-1 td">4,912 <span>words</span></div>
+          <div class="col-sm-1 td">+33k <span>bytes</span></div>
+          <div class="col-sm-1 td">9 <span>uploads</span></div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="trow">
+          <div class="col-sm-3 td zebra"><a href="https://en.wikipedia.org/">en.wikipedia</a></div>
+          <div class="col-sm-1 td">19 <span>created</span></div>
+          <div class="col-sm-1 td">57 <span>views</span></div>
+          <div class="col-sm-1 td">87% <span>survival</span></div>
+          <div class="col-sm-1 td zebra">188 <span>improved</span></div>
+          <div class="col-sm-1 td zebra">549 <span>views</span></div>
+          <div class="col-sm-1 td">9,003 <span>edits</span></div>
+          <div class="col-sm-1 td">9,320 <span>words</span></div>
+          <div class="col-sm-1 td">+46k <span>bytes</span></div>
+          <div class="col-sm-1 td">1 <span>uploads</span></div>
         </div>
 
       </section><!-- #stats -->
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">‘Pages Created’ report</h4>
+            </div>
+            <div class="modal-body">
+              <h5>Select filters to apply for report</h5>
+              <ul>
+                <li>
+                  <input type="checkbox" name="" value="" id="par" checked>
+                  <label for="par">Participants list</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" value="" id="cat" checked>
+                  <label for="cat">Categories</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" value="" id="wor" checked>
+                  <label for="wor">Worklist</label>
+                </li>
+              </ul>
+
+              <h5>Wikis</h5>
+              <select class="" name="">
+                <option value="">All specified for event</option>
+                <option value="">English Wikipedia</option>
+                <option value="">Konkani Wikipedia</option>
+                <option value="">Marathi Wikipedia</option>
+                <option value="">Wikidata</option>
+                <option value="">Commons</option>
+              </select>
+
+              <!-- <h5>Namespace</h5>
+              <select class="" name="">
+                <option value="">Main</option>
+                <option value="">Draft</option>
+                <option value="">Talk</option>
+                <option value="">File</option>
+              </select> -->
+            </div>
+            <div class="modal-footer">
+              <button id="wikitext-report" type="button" class="btn btn-default">Get Wikitext</button>
+              <button id="download-report" type="button" class="btn btn-default" data-loading-text="Loading...">Download CSV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="myOtherModal" tabindex="-1" role="dialog" aria-labelledby="myOtherModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">‘Pages Improved’ report</h4>
+            </div>
+            <div class="modal-body">
+              Please select a format for the report.
+            </div>
+            <div class="modal-footer">
+              <button id="wikitext-report" type="button" class="btn btn-default">Get Wikitext</button>
+              <button id="download-report" type="button" class="btn btn-default" data-loading-text="Loading...">Download CSV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
     </div>
   </main>

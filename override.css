@@ -208,5 +208,8 @@ h3 {
   margin-bottom: 2rem;
   text-transform: uppercase;
   font-variant:
+}
 
+.edit-tabs {
+  margin-left: 15px;
 }
