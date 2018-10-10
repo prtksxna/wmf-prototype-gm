@@ -5,6 +5,17 @@
   font-weight: 800;
   margin-top: 1rem;
 }
+
+.page-header h1 a {
+  font-weight: 800;
+  color: black;
+}
+
+.page-header h1 a:hover {
+  text-decoration: none;
+  color: #337ab7;
+}
+
 .page-header h6 {
   text-transform: uppercase;
   font-variant: small-caps;

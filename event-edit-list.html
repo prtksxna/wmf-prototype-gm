@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="stndz-style">div[class*="item-container-obpd"], a[data-redirect*="paid.outbrain.com"], a[onmousedown*="paid.outbrain.com"] { display: none !important; } a div[class*="item-container-ad"] { height: 0px !important; overflow: hidden !important; position: absolute !important; } div[data-item-syndicated="true"] { display: none !important; } .grv_is_sponsored { display: none !important; } .zergnet-widget-related { display: none !important; } </style>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Grant Metrics
+        </title>
+        <link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="https://tools.wmflabs.org/grantmetrics/favicon.ico">
+
+                <script type="text/javascript">
+                        baseUrl = "/grantmetrics/";
+
+                        i18nLang = "en";
+            i18nPath = "/grantmetrics/i18n/en.json";
+            i18nEnPath = "/grantmetrics/i18n/en.json";
+        </script>
+
+                    <script type="text/javascript" src="./res/jquery.min.js"></script>
+            <script type="text/javascript" src="./res/app.js"></script>
+            <script type="text/javascript" src="./res/bootstrap.min.js"></script>
+            <script type="text/javascript" src="./res/moment.min.js"></script>
+            <script type="text/javascript" src="./res/daterangepicker.min.js"></script>
+                            <link rel="stylesheet" type="text/css" media="screen" href="./res/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="./res/bootstrap-theme.min.css">
+            <link rel="stylesheet" type="text/css" href="./res/daterangepicker.min.css">
+            <link rel="stylesheet" type="text/css" media="screen" href="./res/app.css">
+            <link rel="stylesheet" type="text/css" media="screen" href="override.css">
+
+            <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+            </head>
+    <body class="eventdata eventdata-revisions">
+        <header class="app-header navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <span class="navbar-left">
+                    <span class="home-link">
+                        <img class="app-header--logo" src="./res/logo.svg" alt="Grant Metrics">
+                    </span>
+                                                                <ol class="breadcrumb">
+                    <li>
+                <a href="index.html">My programs</a>
+            </li>
+                <li>
+            <a href="program.html">Name of Program</a>
+        </li>
+        <li>
+            <a href="event.html">Name of Event</a>
+        </li>
+        <li class="active">Event edit list</li>
+    </ol>
+                </span>
+                <span class="pull-right">
+                                            <span class="logged-in">
+                            PSaxena (WMF)
+                            (<a href="https://tools.wmflabs.org/grantmetrics/logout">Log out</a>)
+                        </span>
+                                        <div class="btn-group dropdown help-dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-question-sign"></span>
+                            Help
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li>
+                                <a target="_blank" href="https://meta.wikimedia.org/wiki/Grant_Metrics">
+                                    <span class="font-awesome"></span>
+                                    Documentation
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://phabricator.wikimedia.org/maniphest/task/create?projects=grant-metrics">
+                                    <span class="font-awesome"></span>
+                                    Report an issue
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://meta.wikimedia.org/wiki/Talk:Grant_Metrics">
+                                    <span class="font-awesome"></span>
+                                    Feedback
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                                            <div class="lang-group btn-group dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                  <path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path>
+                                </svg>
+                                English
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li>
+                                    <a target="_blank" href="https://translatewiki.net/w/i.php?title=Special:Translate&amp;group=grant-metrics&amp;language=en&amp;action=translate">Help translate</a>
+                                </li>
+                                <li class="divider" role="separator"></li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=af" data-lang="af">Afrikaans</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=ast" data-lang="ast">Asturianu</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=az" data-lang="az">Azərbaycanca</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=id" data-lang="id">Bahasa Indonesia</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=bs" data-lang="bs">Bosanski</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=br" data-lang="br">Brezhoneg</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=en-gb" data-lang="en-gb">British English</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=ca" data-lang="ca">Català</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=da" data-lang="da">Dansk</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=de" data-lang="de">Deutsch</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=et" data-lang="et">Eesti</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=en" data-lang="en">English</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=es" data-lang="es">Español</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=eo" data-lang="eo">Esperanto</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=eu" data-lang="eu">Euskara</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=hif-latn" data-lang="hif-latn">Fiji Hindi</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=fr" data-lang="fr">Français</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=gl" data-lang="gl">Galego</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=gom-latn" data-lang="gom-latn">Gõychi Konknni</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=hr" data-lang="hr">Hrvatski</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=ia" data-lang="ia">Interlingua</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=it" data-lang="it">Italiano</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=csb" data-lang="csb">Kaszëbsczi</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=sw" data-lang="sw">Kiswahili</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=ku-latn" data-lang="ku-latn">Kurdî (latînî)‎</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=lv" data-lang="lv">Latviešu</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=lt" data-lang="lt">Lietuvių</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=lb" data-lang="lb">Lëtzebuergesch</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=hu" data-lang="hu">Magyar</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=mg" data-lang="mg">Malagasy</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=mi" data-lang="mi">Māori</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=nl" data-lang="nl">Nederlands</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=nb" data-lang="nb">Norsk bokmål</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=oc" data-lang="oc">Occitan</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=pcd" data-lang="pcd">Picard</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=pms" data-lang="pms">Piemontèis</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=pl" data-lang="pl">Polski</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=pt" data-lang="pt">Português</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=pt-br" data-lang="pt-br">Português do Brasil</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=ksh" data-lang="ksh">Ripoarisch</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=ro" data-lang="ro">Română</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=sco" data-lang="sco">Scots</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=sk" data-lang="sk">Slovenčina</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=sl" data-lang="sl">Slovenščina</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=fi" data-lang="fi">Suomi</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=sv" data-lang="sv">Svenska</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=kab" data-lang="kab">Taqbaylit</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=vi" data-lang="vi">Tiếng Việt</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=tr" data-lang="tr">Türkçe</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=en-us" data-lang="en-us">US English</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=diq" data-lang="diq">Zazaki</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=cs" data-lang="cs">čeština</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=el" data-lang="el">Ελληνικά</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=ba" data-lang="ba">башҡортса</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=be" data-lang="be">беларуская</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=be-tarask" data-lang="be-tarask">беларуская (тарашкевіца)‎</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=bg" data-lang="bg">български</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=kum" data-lang="kum">къумукъ</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=mk" data-lang="mk">македонски</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=mn" data-lang="mn">монгол</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=ce" data-lang="ce">нохчийн</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=ru" data-lang="ru">русский</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=sr-ec" data-lang="sr-ec">српски (ћирилица)‎</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=sr" data-lang="sr">српски / srpski</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=tt-cyrl" data-lang="tt-cyrl">татарча</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=uk" data-lang="uk">українська</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=kk" data-lang="kk">қазақша</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=kk-cyrl" data-lang="kk-cyrl">қазақша (кирил)‎</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=hy" data-lang="hy">Հայերեն</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=hyw" data-lang="hyw">արեւմտահայերէն</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=yi" data-lang="yi">ייִדיש</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=he" data-lang="he">עברית</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=ug-arab" data-lang="ug-arab">ئۇيغۇرچە</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=ur" data-lang="ur">اردو</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=ar" data-lang="ar">العربية</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=azb" data-lang="azb">تۆرکجه</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=bgn" data-lang="bgn">روچ کپتین بلوچی</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=skr-arab" data-lang="skr-arab">سرائیکی</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=sd" data-lang="sd">سنڌي</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=fa" data-lang="fa">فارسی</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=ps" data-lang="ps">پښتو</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=ckb" data-lang="ckb">کوردی</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=ne" data-lang="ne">नेपाली</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=mr" data-lang="mr">मराठी</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=hi" data-lang="hi">हिन्दी</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=as" data-lang="as">অসমীয়া</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=bn" data-lang="bn">বাংলা</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=or" data-lang="or">ଓଡ଼ିଆ</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=ta" data-lang="ta">தமிழ்</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=ml" data-lang="ml">മലയാളം</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=th" data-lang="th">ไทย</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=mnw" data-lang="mnw">ဘာသာ မန်</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=my" data-lang="my">မြန်မာဘာသာ</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=ka" data-lang="ka">ქართული</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=zh" data-lang="zh">中文</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=zh-hans" data-lang="zh-hans">中文（简体）‎</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=zh-hant" data-lang="zh-hant">中文（繁體）‎</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=ja" data-lang="ja">日本語</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=yue" data-lang="yue">粵語</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="lang-link" href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions?uselang=ko" data-lang="ko">한국어</a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                                    </span>
+            </div>
+        </header>
+
+
+        <main class="app-body">
+            <div class="alert-container container">
+                            </div>
+
+                <div class="container">
+                  <div class="page-header">
+
+                    <div class="col-sm-8">
+                      <h6>event edit list</h6>
+                      <h1><a href="event.html">Name of Event</a></h1>
+                      <small style="color:#aaa;">last updated <time datetime="2018-09-25 22:02" title="2018-09-25 22:02">3 days ago</time> </small>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <div class="header-buttons pull-right">
+                        <div class="btn-group" role="group">
+                          <a href="#" type="button" name="button" class="btn btn-default btn-sm">Get Wikitext</a>
+                          <a type="button" class="btn btn-default btn-sm" href="#">
+                            Download CSV
+                          </a>
+                          <button class="btn btn-primary dropdown-toggle btn-sm" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Download reports
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Event summary</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#myModal">Pages created (don't click, experimental)</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#myOtherModal">Pages improved</a></li>
+                            <li><a href="#">Files uploaded</a></li>
+                            <li><a href="#">Wikidata contributions</a></li>
+                            <li><a href="#">Revision list</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="clearfix">
+
+                    </div>
+                    <br><br><br>
+        </div>
+
+            </div>
+
+    <section class="event-revisions container-fluid" style="padding:0;">
+        <table class="table table-striped table-hover table-bordered">
+            <thead>
+                <tr>
+                                            <th>Date</th>
+                                            <th>Page</th>
+                                            <th>Wiki</th>
+                                            <th>Username</th>
+                                            <th>Edit summary</th>
+                                    </tr>
+            </thead>
+            <tbody>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/857554140" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/857554140" target="_blank">2018-09-01 12:42</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Amartey" target="_blank">Amartey</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td>added a name of an Article to be created</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/857555836" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/857555836" target="_blank">2018-09-01 13:00</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Nartey" target="_blank">Nartey</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td>added a name</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/857619584" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/857619584" target="_blank">2018-09-01 22:30</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Sarkodie%20(rapper)" target="_blank">Sarkodie (rapper)</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td><a target="_blank" href="https://en.wikipedia.org/wiki/Sarkodie_(rapper)#Personal_Life">→</a><em class="text-muted">Personal Life:</em> removed promotional text from section personal life</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/857625760" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/857625760" target="_blank">2018-09-01 23:28</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Emmanuel%20Agbeko%20Gamor" target="_blank">Emmanuel Agbeko Gamor</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td>corrected a tense in the intro text</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/857991440" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/857991440" target="_blank">2018-09-04 10:39</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Ghana%20Economic%20Forum" target="_blank">Ghana Economic Forum</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td>created the Ghana Economic Forum</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/857991811" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/857991811" target="_blank">2018-09-04 10:44</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Ghana%20Economic%20Forum" target="_blank">Ghana Economic Forum</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td>added references and the reference section</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/857992450" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/857992450" target="_blank">2018-09-04 10:51</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Ghana%20Economic%20Forum" target="_blank">Ghana Economic Forum</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td>added <a target="_blank" href="https://en.wikipedia.org/wiki/Category:Forums_of_Ghana">Category:Forums of Ghana</a> using <a target="_blank" href="https://en.wikipedia.org/wiki/WP:HC">HotCat</a></td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/857992681" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/857992681" target="_blank">2018-09-04 10:54</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Ghana%20Economic%20Forum" target="_blank">Ghana Economic Forum</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td>added a stub tag</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/857993540" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/857993540" target="_blank">2018-09-04 11:05</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Ghana%20Economic%20Forum" target="_blank">Ghana Economic Forum</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td>added a new section</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/857996826" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/857996826" target="_blank">2018-09-04 11:41</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Ghana%20Economic%20Forum" target="_blank">Ghana Economic Forum</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td>added a table covering dates of the event, theme and location</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/857997319" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/857997319" target="_blank">2018-09-04 11:47</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Ghana%20Economic%20Forum" target="_blank">Ghana Economic Forum</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td><a target="_blank" href="https://en.wikipedia.org/wiki/Ghana_Economic_Forum#Annual_Meeting">→</a><em class="text-muted">Annual Meeting:</em> added a list of notable speakers session</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/858002058" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/858002058" target="_blank">2018-09-04 12:35</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Ghana%20Economic%20Forum" target="_blank">Ghana Economic Forum</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/858028594" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/858028594" target="_blank">2018-09-04 16:25</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Ghana%20Economic%20Forum" target="_blank">Ghana Economic Forum</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td><a target="_blank" href="https://en.wikipedia.org/wiki/Ghana_Economic_Forum#List_of_notable_speakers">→</a><em class="text-muted">List of notable speakers:</em></td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/858028703" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/858028703" target="_blank">2018-09-04 16:26</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Ghana%20Economic%20Forum" target="_blank">Ghana Economic Forum</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td><a target="_blank" href="https://en.wikipedia.org/wiki/Ghana_Economic_Forum#List_of_notable_speakers">→</a><em class="text-muted">List of notable speakers:</em></td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/858029344" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/858029344" target="_blank">2018-09-04 16:31</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Yaw%20Osafo-Marfo" target="_blank">Yaw Osafo-Marfo</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td>added a photo to the article</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/860846118" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/860846118" target="_blank">2018-09-23 13:12</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Felicia%20Ansah%20Abban" target="_blank">Felicia Ansah Abban</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td>Flixtey moved page <a target="_blank" href="https://en.wikipedia.org/wiki/Felicia_Ansah_Abann">Felicia Ansah Abann</a> to <a target="_blank" href="https://en.wikipedia.org/wiki/Felicia_Ansah_Abban">Felicia Ansah Abban</a>: Spelling mistake in the name</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/860846120" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/860846120" target="_blank">2018-09-23 13:12</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Felicia%20Ansah%20Abann" target="_blank">Felicia Ansah Abann</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td>Flixtey moved page <a target="_blank" href="https://en.wikipedia.org/wiki/Felicia_Ansah_Abann">Felicia Ansah Abann</a> to <a target="_blank" href="https://en.wikipedia.org/wiki/Felicia_Ansah_Abban">Felicia Ansah Abban</a>: Spelling mistake in the name</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/860871811" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/860871811" target="_blank">2018-09-23 16:48</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Kwesi%20Nyantakyi" target="_blank">Kwesi Nyantakyi</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td><a target="_blank" href="https://en.wikipedia.org/wiki/Kwesi_Nyantakyi#Controversies">→</a><em class="text-muted">Controversies:</em> corrected grammar</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/860873830" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/860873830" target="_blank">2018-09-23 17:04</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Merihun%20Crespi" target="_blank">Merihun Crespi</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td>Added tags to the page using <a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:Page_Curation">Page Curation</a> (refimprove)</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/860874036" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/860874036" target="_blank">2018-09-23 17:05</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Merihun%20Crespi" target="_blank">Merihun Crespi</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td>added a stub tag</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/860875138" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/860875138" target="_blank">2018-09-23 17:14</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Sidney%20Goldstein" target="_blank">Sidney Goldstein</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td>added an infobox</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/860875477" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/860875477" target="_blank">2018-09-23 17:16</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Somruk%20Sungpokeaw" target="_blank">Somruk Sungpokeaw</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td>added a bio stub</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/860875639" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/860875639" target="_blank">2018-09-23 17:17</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/12-18%20Brunswick%20Square,%20Gloucester" target="_blank">12-18 Brunswick Square, Gloucester</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td>Added tags to the page using <a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:Page_Curation">Page Curation</a> (refimprove)</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/860876039" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/860876039" target="_blank">2018-09-23 17:20</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Nuntanit%20Tongsom" target="_blank">Nuntanit Tongsom</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td>added a stub tag</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/860876803" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/860876803" target="_blank">2018-09-23 17:26</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Spanish%20school%20students&amp;#039;%20union" target="_blank">Spanish school students' union</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td><a target="_blank" href="https://en.wikipedia.org/wiki/Spanish_school_students" _union#top'="">→</a><em class="text-muted">top:</em> added a section references</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/860876866" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/860876866" target="_blank">2018-09-23 17:27</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Spanish%20school%20students&amp;#039;%20union" target="_blank">Spanish school students' union</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td>Added tags to the page using <a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:Page_Curation">Page Curation</a> (uncategorised)</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/860876937" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/860876937" target="_blank">2018-09-23 17:27</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Spanish%20school%20students&amp;#039;%20union" target="_blank">Spanish school students' union</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td><a target="_blank" href="https://en.wikipedia.org/wiki/Spanish_school_students" _union#top'="">→</a><em class="text-muted">top:</em> added a reflist tag</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/860906137" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/860906137" target="_blank">2018-09-23 21:41</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Ghana%20Economic%20Forum" target="_blank">Ghana Economic Forum</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td><a target="_blank" href="https://en.wikipedia.org/wiki/Ghana_Economic_Forum#top">→</a><em class="text-muted">top:</em> added 2 new photos</td>
+                    </tr>
+                                    <tr class="event-revision">
+                        <td class="text-nowrap">
+                            (<a href="https://en.wikipedia.org/wiki/Special:Diff/860906321" target="_blank">diff</a>)
+                            <a href="https://en.wikipedia.org/wiki/Special:PermaLink/860906321" target="_blank">2018-09-23 21:43</a>
+                        </td>
+                        <td>
+                                                        <a href="https://en.wikipedia.org/wiki/Ghana%20Economic%20Forum" target="_blank">Ghana Economic Forum</a>
+                        </td>
+                        <td class="text-nowrap">en.wikipedia</td>
+                        <td class="text-nowrap">
+                            <a href="https://en.wikipedia.org/wiki/User:Flixtey" target="_blank">Flixtey</a>
+                        </td>
+                        <td><a target="_blank" href="https://en.wikipedia.org/wiki/Ghana_Economic_Forum#top">→</a><em class="text-muted">top:</em> added a category tag</td>
+                    </tr>
+                            </tbody>
+        </table>
+
+                            </section>
+        </main>
+        <footer class="app-footer container-fluid navbar navbar-default">
+    <ul class="list-inline footer-links">
+        <li>
+            <a target="_blank" href="https://meta.wikimedia.org/wiki/Grant_Metrics">
+                <span class="font-awesome"></span>
+                Documentation
+            </a>
+        </li>
+        <li>
+            <a target="_blank" href="https://github.com/wikimedia/grantmetrics">
+                <span class="font-awesome"></span>
+                View source
+            </a>
+        </li>
+        <li>
+            <a target="_blank" href="https://phabricator.wikimedia.org/maniphest/task/create?projects=grant-metrics">
+                <span class="font-awesome"></span>
+                Report an issue
+            </a>
+        </li>
+        <li>
+            <a target="_blank" href="https://meta.wikimedia.org/wiki/Talk:Grant_Metrics">
+                <span class="font-awesome"></span>
+                Feedback
+            </a>
+        </li>
+        <li>
+            <a target="_blank" href="https://mediawiki.org/wiki/Community_Tech">
+                <span class="font-awesome"></span>
+                Developed by Community Tech
+            </a>
+        </li>
+        <li>
+            <a href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign/1Lib1Ref_January/revisions#" data-toggle="modal" data-target="#image_attribution">
+                <span class="font-awesome"></span>
+                Attribution
+            </a>
+        </li>
+    </ul>
+</footer>
+
+        <div class="modal fade" id="image_attribution" tabindex="-1" role="dialog" aria-labelledby="image-attribution-label">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="image-attribution-label">
+                        Attribution
+                    </h4>
+                </div>
+                <div class="modal-body">
+                                        <p>
+                                                                                                                            <a target="_blank" href="https://fonts.google.com/specimen/Open+Sans">Roboto</a>
+                         font available under the                             <a target="_blank" href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>
+                         license, courtesy of                             <a target="_blank" href="https://twitter.com/SteveMatteson1">Christian Robertson</a>.
+
+                    </p>
+                    <p>
+                                                                                                                            <a target="_blank" href="http://fontawesome.io/">Font Awesome</a>
+                         icons released under                             <a target="_blank" href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=OFL">Open Font License</a>
+                         courtesy of                             <a target="_blank" href="https://twitter.com/davegandy">Dave Gandy</a>.
+
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<span id="buffer-extension-hover-button" style="display: none; position: absolute; z-index: 8675309; width: 100px; height: 25px; background-image: url(&quot;chrome-extension://noojglkidnpfjbincgijbaiedldjfbhh/data/shared/img/buffer-hover-icon@2x.png&quot;); background-size: 100px 25px; opacity: 0.9; cursor: pointer;"></span></body></html>

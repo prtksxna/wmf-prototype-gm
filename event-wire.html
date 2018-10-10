@@ -17,19 +17,17 @@
   </script>
 
   <script type="text/javascript" src="./res/jquery.min.js"></script>
-  <script type="text/javascript" src="./res/app.3ae4acc9.js"></script>
+  <script type="text/javascript" src="./res/app.js"></script>
   <script type="text/javascript" src="./res/bootstrap.min.js"></script>
   <script type="text/javascript" src="./res/moment.min.js"></script>
   <script type="text/javascript" src="./res/daterangepicker.min.js"></script>
-
-  <script type="text/javascript" src="download.js"></script>
   <link rel="stylesheet" type="text/css" media="screen" href="./res/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./res/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="./res/daterangepicker.min.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="./res/app.1e37ea7c.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./res/app.css">
   <link rel="stylesheet" href="override.css">
 
-  <!--<link rel="stylesheet" href="wire.css">-->
+  <link rel="stylesheet" href="wire.css">
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -417,13 +415,13 @@
             <div class="btn-group" role="group">
               <button type="button" name="button" class="btn btn-default">Edit event</button>
               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Download reports
+                Download
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                 <li><a href="#">Event summary</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#myModal">Pages created</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#myOtherModal">Pages improved</a></li>
+                <li><a href="#">Pages created</a></li>
+                <li><a href="#">Pages improved</a></li>
                 <li><a href="#">Files uploaded</a></li>
                 <li><a href="#">Wikidata contributions</a></li>
                 <li><a href="#">Revision list</a></li>
@@ -434,7 +432,7 @@
               </button>
             </div>
             <div class="event-stats-status pull-right">
-              last updated about 3 days ago &nbsp;&nbsp;&nbsp;&nbsp;
+              last updated about 3 days ago &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </div>
           </div>
         </div>
@@ -462,9 +460,6 @@
         <div class="col-sm-4">
           <strong>Wikis:</strong>
           <a href="#">*.wikipedia</a>, <a href="#">commons</a> and <a href="#">wikidata</a>
-          <br>
-          <strong>Categories:</strong>
-          <a href="#">Atomism</a>, <a href="#">Mudras</a>, <a href="#">Samkhya</a> and <a href="#">24 more</a>.
         </div>
 
         <div class="clearfix"></div>
@@ -650,7 +645,7 @@
         </div>
         <div class="col-sm-2">
           <dl>
-            <dt><br>% Women (estimated)</dt>
+            <dt><br>% Women (est.)</dt>
             <dd>
               29%
               <img src="donut.png" alt="">
@@ -722,78 +717,6 @@
         </div>
 
       </section><!-- #stats -->
-
-
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog modal-sm" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">‘Pages Created’ report</h4>
-            </div>
-            <div class="modal-body">
-              <h5>Select filters to apply for report</h5>
-              <ul>
-                <li>
-                  <input type="checkbox" name="" value="" id="par" checked>
-                  <label for="par">Participants list</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="" value="" id="cat" checked>
-                  <label for="cat">Categories</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="" value="" id="wor" checked>
-                  <label for="wor">Worklist</label>
-                </li>
-              </ul>
-
-              <h5>Wikis</h5>
-              <select class="" name="">
-                <option value="">All specified for event</option>
-                <option value="">English Wikipedia</option>
-                <option value="">Konkani Wikipedia</option>
-                <option value="">Marathi Wikipedia</option>
-                <option value="">Wikidata</option>
-                <option value="">Commons</option>
-              </select>
-
-              <!-- <h5>Namespace</h5>
-              <select class="" name="">
-                <option value="">Main</option>
-                <option value="">Draft</option>
-                <option value="">Talk</option>
-                <option value="">File</option>
-              </select> -->
-            </div>
-            <div class="modal-footer">
-              <button id="wikitext-report" type="button" class="btn btn-default">Get Wikitext</button>
-              <button id="download-report" type="button" class="btn btn-default" data-loading-text="Loading...">Download CSV</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade" id="myOtherModal" tabindex="-1" role="dialog" aria-labelledby="myOtherModalLabel">
-        <div class="modal-dialog modal-sm" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">‘Pages Improved’ report</h4>
-            </div>
-            <div class="modal-body">
-              Please select a format for the report.
-            </div>
-            <div class="modal-footer">
-              <button id="wikitext-report" type="button" class="btn btn-default">Get Wikitext</button>
-              <button id="download-report" type="button" class="btn btn-default" data-loading-text="Loading...">Download CSV</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
 
     </div>
   </main>

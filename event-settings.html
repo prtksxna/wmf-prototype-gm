@@ -17,7 +17,7 @@
   </script>
 
   <script type="text/javascript" src="./res/jquery.min.js"></script>
-  <script type="text/javascript" src="./res/app.3ae4acc9.js"></script>
+  <script type="text/javascript" src="./res/app.js"></script>
   <script type="text/javascript" src="./res/bootstrap.min.js"></script>
   <script type="text/javascript" src="./res/moment.min.js"></script>
   <script type="text/javascript" src="./res/daterangepicker.min.js"></script>
@@ -26,7 +26,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="./res/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./res/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="./res/daterangepicker.min.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="./res/app.1e37ea7c.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./res/app.css">
   <link rel="stylesheet" href="override.css">
 
   <!--<link rel="stylesheet" href="wire.css">-->
@@ -43,13 +43,16 @@
         </span>
         <ol class="breadcrumb">
           <li>
-            <a href="https://tools.wmflabs.org/grantmetrics/programs">My programs</a>
+            <a href="index.html">My programs</a>
           </li>
           <li>
-            <a href="https://tools.wmflabs.org/grantmetrics/programs/1Lib1Ref_Campaign">Name of program</a>
+            <a href="program.html">Name of Program</a>
+          </li>
+          <li>
+            <a href="event.html">Name of Event</a>
           </li>
           <li class="active">
-            Name of Event
+            Event settings
           </li>
         </ol>
       </span>
@@ -408,8 +411,8 @@
       <div class="page-header">
 
         <div class="col-sm-8">
-          <h6>edit event</h6>
-          <h1>Name of Event</h1>
+          <h6>event settings</h6>
+          <h1><a href="event.html">Name of Event</a></h1>
         </div>
 
         <div class="clearfix"></div>
@@ -438,6 +441,8 @@
             <textarea class="form-control" rows=4>A short event description if required. Phasellus pulvinar pretium elit, sit amet pellentesque augue viverra ac. Mauris fermentum mauris neque, eu interdum urna mattis scelerisque. Pellentesque in magna nunc. Sed pulvinar scelerisque elit nec bibendum. Vivamus faucibus ligula vel ipsum hendrerit consectetur. Vivamus rutrum sagittis convallis. Pellentesque ex felis, ullamcorper eget porta ultrices, molestie vitae massa. Donec interdum massa non nisi tempus, ut semper est aliquam.</textarea>
           </div>
       </fieldset>
+
+      <h4 class="col-sm-offset-2 form-heading">Details</h4>
 
       <fieldset class="event__basic-info">
         <div class="form-group">
@@ -508,7 +513,7 @@
                               </div>
                             </fieldset>
 
-                            <br><br>
+                            <h4 class="col-sm-offset-2 form-heading">Scope</h4>
 
                             <fieldset class="event__wikis">
                               <div class="form-group wiki-row wiki-row__template">
@@ -651,7 +656,7 @@
                                     </div>
                               </fieldset>
 
-                              <br>
+                              <h4 class="col-sm-offset-2 form-heading">Participants</h4>
 
                               <fieldset class="event__basic-info">
                                 <div class="form-group">
