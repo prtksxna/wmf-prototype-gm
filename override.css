@@ -259,3 +259,109 @@ label.required {
 .edit-tabs {
   margin-left: 15px;
 }
+
+
+/* Spinners */
+.spinner {
+	white-space: nowrap;
+}
+
+.spinner .bounce,
+.spinner:before,
+.spinner:after {
+	content: '';
+	background-color: #72777d;
+	display: block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	border-radius: 100%;
+	-webkit-animation: bouncedelay 1600ms infinite ease-in-out both;
+	animation: bouncedelay 1600ms infinite ease-in-out both;
+	-webkit-animation-delay: -160ms;
+	animation-delay: -160ms;
+}
+
+.spinner:before {
+	margin-right: 4px;
+	-webkit-animation-delay: -330ms;
+	animation-delay: -330ms;
+}
+
+.spinner:after {
+	margin-left: 4px;
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s;
+}
+
+.spinner--small .bounce,
+.spinner--small:before,
+.spinner--small:after {
+	width: 12px;
+	height: 12px;
+}
+
+.spinner--inverted .bounce,
+.spinner--inverted:before,
+.spinner--inverted:after {
+	background-color: #c8ccd1;
+}
+
+@-webkit-keyframes bouncedelay {
+	0%,
+  50%,
+  100% {
+		-webkit-transform: scale(0.625);
+	}
+
+	20% {
+		opacity: 0.87;
+		-webkit-transform: scale(1);
+	}
+}
+
+@-moz-keyframes bouncedelay {
+	0%,
+  50%,
+  100% {
+		-moz-transform: scale(0.625);
+	}
+
+	20% {
+		opacity: 0.87;
+		-moz-transform: scale(1);
+	}
+}
+
+@keyframes bouncedelay {
+	0%,
+  50%,
+  100% {
+		-ms-transform: scale(0.625);
+		transform: scale(0.625);
+	}
+
+	20% {
+		opacity: 0.87;
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+.background--dark {
+	background-color: black;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	height: 50%;
+}
+
+.spinner--layout {
+	display: block;
+	max-width: 56px;
+	margin: 10px auto 0;
+}
+
+.spinner--layout.spinner--small {
+	max-width: 46px;
+}
