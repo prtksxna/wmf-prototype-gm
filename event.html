@@ -416,6 +416,7 @@
           <div class="header-buttons pull-right">
             <div class="btn-group" role="group">
               <a href="event-settings.html" type="button" name="button" class="btn btn-default">Settings</a>
+              <!-- <button type="button" class="btn btn-default event-process-btn" data-event-id="141" data-toggle="tooltip" data-placement="top" title="You can update again after 22 minutes. Update is unavailable for 30 minutes after each update. Last updated: 15:39" disabled> -->
               <button type="button" class="btn btn-default event-process-btn" data-event-id="141">
                 Update data
               </button>
@@ -427,9 +428,9 @@
                 <li><a href="#">Event summary</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#myModal">Pages created (don't click, experimental)</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#myOtherModal">Pages improved</a></li>
-                <li><a href="#">Files uploaded</a></li>
-                <li><a href="#">Wikidata contributions</a></li>
-                <li><a href="#">Event edit list</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#noupdate-modal">Files uploaded</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#ud-modal">Wikidata contributions</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#failed-modal">Event edit list</a></li>
               </ul>
             </div>
 
@@ -818,6 +819,64 @@
             <div class="modal-footer">
               <button id="wikitext-report" type="button" class="btn btn-default">Get Wikitext</button>
               <button id="download-report" type="button" class="btn btn-default" data-loading-text="Loading...">Download CSV</button>
+              <div class="pull-right">
+                <small class="lu">last updated <time title="2018/10/30 15:33">3 hours ago</time></small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="noupdate-modal" tabindex="-1" role="dialog" aria-labelledby="noupdate-label">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Can't update data</h4>
+            </div>
+            <div class="modal-body">
+               To reduce system load, updating is not permitted for <em>30 minutes</em> after each update. Last updated: <em>14:45</em>.<br>
+               You'll be able to update again in <em>14 minutes</em>.
+            </div>
+            <div class="modal-footer">
+              <button id="ok" type="button" class="btn btn-primary">O</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="ud-modal" tabindex="-1" role="dialog" aria-labelledby="ud-modal-label">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Metrics updating…</h4>
+            </div>
+            <div class="modal-body">
+              <div class="progress">
+  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+    <span class="sr-only">45% Complete</span>
+  </div>
+</div>
+              <small>This might take a while. Please leave this tab open. The page will refresh automatically once the data is updated.</small>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="failed-modal" tabindex="-1" role="dialog" aria-labelledby="failed-label">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">This process took too long and was stopped.</h4>
+            </div>
+            <div class="modal-body">
+               <p>Please use the Settings page to reduce the event time period or the number of participants, wikis, or categories included. Also <a href="https://meta.wikimedia.org/wiki/Talk:Community_Tech/Tools_for_program_and_event_organizers">please report this issue</a>.</p>
+            </div>
+            <div class="modal-footer">
+              <button id="ok" type="button" class="btn btn-primary">OK</button>
             </div>
           </div>
         </div>

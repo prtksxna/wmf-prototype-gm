@@ -44,6 +44,17 @@ time {
   font-style: italic;
 }
 
+.lu {
+  margin-top: 10px;
+  display: block;
+  margin-right: 3px;
+}
+
+.lu time {
+  font-weight: normal;
+  font-style: normal;
+}
+
 .header-buttons {
   padding-top: 30px;
 }
