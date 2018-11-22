@@ -207,6 +207,10 @@ time {
   background-color: #eaf3ff;
 }
 
+.sep {
+  border-left: 1px solid #72777d;
+}
+
 .trow span {
   opacity: 0;
   margin-top: -5px;
