@@ -122,6 +122,21 @@ time {
   color: #777;
 }
 
+#stats .info-icon {
+  opacity: 0.3;
+  margin-left: 0.5rem;
+  display: inline-block;
+}
+
+#stats dl:hover .info-icon {
+  opacity: 1;
+}
+
+#stats .tooltip {
+  text-transform: none;
+  font-variant: normal;
+}
+
 .mini dd {
   font-size: 3rem !important;
 }
