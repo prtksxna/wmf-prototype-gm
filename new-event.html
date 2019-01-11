@@ -503,22 +503,37 @@
           <span class="font-awesome info-icon" data-toggle="tooltip" data-placement="bottom" title="The system will behave as though the talk page categories were applied to the associated main pages. Only main-page changes will be counted."></span>
         </small>
     </div>
-    <div class="col-sm-2">
-      <input type="text"class="form-control" placeholder="Wiki name" value="">
-      <br>
-      <a href="#" class="add-category">
-        <div class="glyphicon glyphicon-plus-sign"></div>
-        Add another category
-      </a>
+    <div class="col-sm-10" style="padding:0;">
 
-    </div>
-    <div class="col-sm-6 catcat">
-      <input type="text"class="form-control" value="" placeholder="Category name">
-    </div>
-    <div class="col-sm-2">
-      <!-- <button type="button" class="btn btn-default">
-        Remove
-      </button> -->
+      <div id="catholder">
+        <div class="col-sm-3">
+          <input type="text"class="form-control" placeholder="Wiki name" value="">
+        </div>
+        <div class="col-sm-6 catcat">
+          <input type="text"class="form-control" value="" placeholder="Category name">
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-default">
+            Remove
+          </button>
+        </div>
+      </div>
+
+      <div class="col-sm-5">
+        <br>
+        <a href="#" class="add-category">
+          <div class="glyphicon glyphicon-plus-sign"></div>
+          Add another category
+        </a>
+        <script type="text/javascript">
+          $(function () {
+            $('.add-category').click( function () {
+              $('#catholder')[0].innerHTML += '<br><br><div class="col-sm-3"><input type="text"class="form-control" placeholder="Wiki name" value=""></div><div class="col-sm-6 catcat"><input type="text"class="form-control" value="" placeholder="Category name"></div><div class="col-sm-3"><button type="button" class="btn btn-default">Remove</button></div>';
+              return false;
+            })
+          })
+        </script>
+      </div>
     </div>
   </div><!-- form-group (categories) -->
   <br><br>
