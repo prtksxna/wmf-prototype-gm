@@ -408,7 +408,13 @@
 
         <form name="event" method="post" id="event_form" class="form-horizontal">
 
-
+          <div class="form-group">
+            <div class="col-sm-2 text-right">
+                <h4>Basic information</h4>
+            </div>
+            <div class="col-sm-8">
+            </div>
+          </div>
 
 <fieldset class="event__basic-info">
         <div class="form-group"><label class="col-sm-2 control-label required" for="event_title">Title</label><div class="col-sm-8"><input type="text" id="event_title" name="event[title]" required="required" class="form-control"></div>
@@ -485,7 +491,7 @@
         <h4>Filters</h4>
     </div>
     <div class="col-sm-8">
-      <p style="margin-top:10px;">To generate event metrics, you must use <strong>at least one</strong> of the following filters</p>
+      <p style="margin-top:10px;">To generate event metrics, you must use <strong>at least one</strong> of the following filters: Categories, Participants</p>
     </div>
   </div>
 
@@ -493,8 +499,8 @@
     <div class="col-sm-2 text-right">
         <label class="control-label">Categories</label><br>
         <small>
-          Enter categories with wiki names to limit metrics to pages in those categories.
-          <span class="font-awesome info-icon" data-toggle="tooltip" data-placement="bottom" title="You can include categories applied to talk pages; the system will behave as though the categories were applied to the associated main pages. Only main-page changes will be counted"></span>
+          Limits metrics to pages in select categories. You can include categories applied to talk pages
+          <span class="font-awesome info-icon" data-toggle="tooltip" data-placement="bottom" title="The system will behave as though the talk page categories were applied to the associated main pages. Only main-page changes will be counted."></span>
         </small>
     </div>
     <div class="col-sm-2">
@@ -538,6 +544,16 @@
 </div>
 
 <div class="col-md-12">
+
+  <div class="form-group">
+    <div class="col-sm-2 text-right">
+        <h4>Optional details</h4>
+    </div>
+    <div class="col-sm-8">
+      <p style="margin-top:10px;">The following  fields to make your reports more informative and readable. (In future, some fields may be used for sorting.)</p>
+    </div>
+  </div>
+
   <fieldset class="event__basic-info">
     <div class="form-group">
       <div class="col-sm-2 text-right">
@@ -596,7 +612,10 @@
     <div class="form-group">
       <div class="col-sm-2 text-right">
         <label class="control-label">Gender breakdown (estimated)</label><br>
-        <small style="color: #666;">Optional</small>
+        <small style="color: #666;">
+          Optional
+          <span class="font-awesome info-icon" data-toggle="tooltip" data-placement="bottom" title="Enter these figures directly yourself based on your own visual count or survey. This tool is provided for the convenience of organizers who wish to track participation by gender."></span>
+        </small>
       </div>
       <label class="col-sm-2 control-label" for="event_title"># of females</label>
       <div class="col-sm-6">
@@ -611,9 +630,6 @@
       <label class="col-sm-offset-2 col-sm-2 control-label" for="event_title"># of other</label>
       <div class="col-sm-6">
         <input type="number" class="form-control">
-      </div>
-      <div class="col-sm-6 col-sm-offset-4">
-        <small>Enter these figures directly yourself based on your own visual count or survey. This tool is provided for the convenience of organizers who wish to track participation by gender.</small>
       </div>
     </div>
   </fieldset>
