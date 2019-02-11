@@ -491,16 +491,71 @@
         <h4>Filters</h4>
     </div>
     <div class="col-sm-8">
-      <p style="margin-top:10px;">To generate event metrics, you must use <strong>at least one</strong> of the following filters: Categories, Participants</p>
+      <p style="margin-top:10px;">To generate event metrics, you must use <strong>at least one</strong> of the following filters: Worklists, or Participants.</p>
     </div>
   </div>
-
   <div class="form-group">
     <div class="col-sm-2 text-right">
-        <label class="control-label">Categories</label><br>
+        <label class="control-label">Worklist</label><br>
+        <small>
+          Limits metrics to these pages on the selected wikis.
+          <span class="font-awesome info-icon" data-toggle="tooltip" data-placement="bottom" title="Some help text…"></span>
+        </small>
+    </div>
+    <div class="col-sm-10" style="padding:0;">
+
+      <div id="workholder">
+        <div class="col-sm-3">
+          <input type="text"class="form-control" placeholder="Wiki name" value="">
+        </div>
+        <div class="col-sm-6 catcat">
+          <textarea type="text" rows="5" class="form-control" value="" placeholder="Worklist (one page on one line)"></textarea>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-default">
+            Remove
+          </button>
+        </div>
+      </div>
+
+      <div class="col-sm-5">
+        <br>
+        <a href="#" class="add-worklist">
+          <div class="glyphicon glyphicon-plus-sign"></div>
+          Add another worklist
+        </a>
+        <script type="text/javascript">
+          $(function () {
+            $('.add-worklist').click( function () {
+              $('#workholder')[0].innerHTML += '<div class="clearfix"></div><br><div class="col-sm-3"><input type="text"class="form-control" placeholder="Wiki name" value=""></div><div class="col-sm-6 catcat"><textarea type="text" rows="5" class="form-control" value="" placeholder="Worklist (one page on one line)"></textarea></div><div class="col-sm-3"><button type="button" class="btn btn-default">Remove</button></div>';
+              return false;
+            })
+          })
+        </script>
+      </div>
+    </div>
+  </div><!-- form-group (worklist) -->
+  <center><span style="background:#eee; display:inline-block; padding: 2rem;border-radius: 100%;font-weight: bold;">OR</span></center>
+  <br>
+  <div class="form-group">
+    <div class="col-sm-2 text-right">
+        <label class="control-label">Participants</label><br>
+        <small>
+          Add wiki usernames, one per line, to limit metrics to specific participants.
+          <span class="font-awesome info-icon" data-toggle="tooltip" data-placement="bottom" title="You can copy/paste directly from an on-wiki list."></span>
+        </small>
+    </div>
+    <div class="col-sm-8">
+      <textarea class="form-control" rows="6"></textarea>
+    </div>
+  </div><!-- form-group (participants) -->
+  <br>
+  <div class="form-group">
+    <div class="col-sm-2 text-right">
+        <label class="control-label">Categories <small style="color: #666;">(optional)</small></label><br>
         <small>
           Limits metrics to pages in select categories. You can include categories applied to talk pages
-          <span class="font-awesome info-icon" data-toggle="tooltip" data-placement="bottom" title="The system will behave as though the talk page categories were applied to the associated main pages. Only main-page changes will be counted."></span>
+          <span class="font-awesome info-icon" data-toggle="tooltip" data-placement="bottom" title="The system will behave as though the talk page categories were applied to the associated main pages. Only main-page changes will be counted. On Commons this filters files (images, videos, etc.), instead of pages."></span>
         </small>
     </div>
     <div class="col-sm-10" style="padding:0;">
@@ -536,19 +591,6 @@
       </div>
     </div>
   </div><!-- form-group (categories) -->
-  <br><br>
-  <div class="form-group">
-    <div class="col-sm-2 text-right">
-        <label class="control-label">Participants</label><br>
-        <small>
-          Add wiki usernames, one per line, to limit metrics to specific participants.
-          <span class="font-awesome info-icon" data-toggle="tooltip" data-placement="bottom" title="You can copy/paste directly from an on-wiki list."></span>
-        </small>
-    </div>
-    <div class="col-sm-8">
-      <textarea class="form-control" rows="6"></textarea>
-    </div>
-  </div><!-- form-group (participants) -->
 
 </div><!-- 12 width column for filters -->
 
