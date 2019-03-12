@@ -43,6 +43,27 @@
   margin-bottom: 10px;
 }
 
+.helperror {
+  padding: 20px;
+  margin: 0;
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+
+.helperror h3 {
+  margin-top: 0rem !important;
+}
+
+.helperror.warn {
+  border-left-color: #eea236;
+}
+
+.helperror.warn h3 {
+  color: #eea236;
+}
+
 time {
   font-weight: 500;
   font-style: italic;
