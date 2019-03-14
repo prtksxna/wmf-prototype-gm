@@ -468,24 +468,39 @@
 
         <br><br><br>
 
-        <div class="alert alert-success" role="alert" style="margin-bottom: 10px;">
-          Settings successfully completed or updated. Click “<a href="#">Update data</a>” to calculate metrics.
+
+        <div class="helperror warn">
+          <h3>Event partially configured</h3>
+          <p>
+            You will get metrics for some but not all of the wikis specified for the event.
+            <a href="https://meta.wikimedia.org/wiki/Special:MyLanguage/Event_Metrics#adding-participants" title="Read more about how to enter participant usernames" class="help-link" target="_blank">
+              <span class="glyphicon glyphicon glyphicon-question-sign"></span>
+            </a>
+            <ul>
+              <li>The following wikis require filtering: <strong>English Wikipedia</strong>, <strong>Konkani Wikipedia</strong>.</li>
+              <li>You must provide filtering for every wiki for which you want metrics. </li>
+              <li>To get metrics about <strong>Wikidata</strong>, you must supply Participants. (Categories don’t exist on Wikidata.)</li>
+              <li>Participants filtering applies to all wikis and satisfies all filtering requirements. </li>
+              <li>Category filters are specific to individual wikis. </li>
+            </ul>
+          </p>
         </div>
+
 
         <section class="panel panel-default">
           <div class="panel-heading" role="tab" id="panelHeadingParticipants">
             <h4 class="panel-title">
-              <a role="button" class="collapsed" data-toggle="collapse" href="#panelBodyParticipants" aria-expanded="false" aria-controls="panelBodyParticipants" title="Hide this section">
+              <a role="button" data-toggle="collapse" href="#panelBodyParticipants" aria-expanded="false" aria-controls="panelBodyParticipants" title="Hide this section">
                 Participants filter
               </a>
             </h4>
             <div class="panel-description text-right">
-              4 participants
+              Required for Wikidata
               &nbsp;&nbsp;
-              <span style="color:#5cb85c;" class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+              <span style="color:#d9534f;" class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
             </div>
           </div>
-          <div id="panelBodyParticipants" class="panel-collapse collapse" role="tabpanel" aria-labelledby="panelHeadingParticipants">
+          <div id="panelBodyParticipants" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="panelHeadingParticipants">
             <div class="panel-body">
               <form name="participantForm" method="post" class="save-participants-form" autocomplete="off">
                 <p class="new-participants-label">
@@ -508,50 +523,6 @@
                   </div>
                 </div>
                 <div class="event__participants">
-                  <div class="row participant-row">
-                    <div class="col-sm-4 form-group">
-                      <input type="text" id="participantForm_participants_0" name="participantForm[participants][0]" class="user-input form-control" value="MatmaRex">
-                      <span class="font-awesome valid-input"></span>
-                    </div>
-                    <div class="col-sm-2">
-                      <button type="button" class="btn btn-default remove-participant form-control">
-                        Remove
-                      </button>
-                    </div>
-                  </div>
-                  <div class="row participant-row">
-                    <div class="col-sm-4 form-group">
-                      <input type="text" id="participantForm_participants_1" name="participantForm[participants][1]" class="user-input form-control" value="MusikAnimal">
-                      <span class="font-awesome valid-input"></span>
-                    </div>
-                    <div class="col-sm-2">
-                      <button type="button" class="btn btn-default remove-participant form-control">
-                        Remove
-                      </button>
-                    </div>
-                  </div>
-                  <div class="row participant-row">
-                    <div class="col-sm-4 form-group">
-                      <input type="text" id="participantForm_participants_2" name="participantForm[participants][2]" class="user-input form-control" value="Prtksxna">
-                      <span class="font-awesome valid-input"></span>
-                    </div>
-                    <div class="col-sm-2">
-                      <button type="button" class="btn btn-default remove-participant form-control">
-                        Remove
-                      </button>
-                    </div>
-                  </div>
-                  <div class="row participant-row">
-                    <div class="col-sm-4 form-group">
-                      <input type="text" id="participantForm_participants_3" name="participantForm[participants][3]" class="user-input form-control" value="Sam">
-                      <span class="font-awesome valid-input"></span>
-                    </div>
-                    <div class="col-sm-2">
-                      <button type="button" class="btn btn-default remove-participant form-control">
-                        Remove
-                      </button>
-                    </div>
-                  </div>
                 </div>
                 <input type="hidden" id="participantForm__token" name="participantForm[_token]" value="2Es6cOmEd8KnRwuTCEBYKwL_xj600UPSiR9-UzweNYA">
               </form>
@@ -562,17 +533,17 @@
         <section class="panel panel-default">
           <div class="panel-heading" role="tab" id="panelHeadingCategories">
             <h4 class="panel-title">
-              <a role="button" class="collapsed" data-toggle="collapse" href="#panelBodyCategories" aria-expanded="false" aria-controls="panelBodyCategories" title="Hide this section">
+              <a role="button" data-toggle="collapse" href="#panelBodyCategories" aria-expanded="false" aria-controls="panelBodyCategories" title="Hide this section">
                 Categories filter
               </a>
             </h4>
             <div class="panel-description text-right">
-              Use this to narrow down the metrics
+              Categories not supplied for some wikis
               &nbsp;&nbsp;
-              <span style="color:#337ab7;" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+              <span style="color:#f0ad4e;" class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
             </div>
           </div>
-          <div id="panelBodyCategories" class="panel-collapse collapse" role="tabpanel" aria-labelledby="panelHeadingCategories">
+          <div id="panelBodyCategories" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="panelHeadingCategories">
             <div class="panel-body">
               <div class="row category-row category-row__template form-group hidden">
                 <div class="col-sm-2">
@@ -602,32 +573,6 @@
                     </div>
                     <div class="col-sm-4">
                       <input type="text" id="categoryForm_categories_0_title" name="categoryForm[categories][0][title]" class="category-input form-control" placeholder="Category name" value="अंतरिक्ष">
-                    </div>
-                    <div class="col-sm-2">
-                      <button type="button" class="btn btn-default remove-category form-control">
-                        Remove
-                      </button>
-                    </div>
-                  </div>
-                  <div class="row category-row form-group">
-                    <div class="col-sm-2">
-                      <input type="text" id="categoryForm_categories_1_domain" name="categoryForm[categories][1][domain]" class="wiki-input form-control" placeholder="en.wikipedia" autocomplete="off" value="commons.wikimedia">
-                    </div>
-                    <div class="col-sm-4">
-                      <input type="text" id="categoryForm_categories_1_title" name="categoryForm[categories][1][title]" class="category-input form-control" placeholder="Category name" value="Space">
-                    </div>
-                    <div class="col-sm-2">
-                      <button type="button" class="btn btn-default remove-category form-control">
-                        Remove
-                      </button>
-                    </div>
-                  </div>
-                  <div class="row category-row form-group">
-                    <div class="col-sm-2">
-                      <input type="text" id="categoryForm_categories_2_domain" name="categoryForm[categories][2][domain]" class="wiki-input form-control" placeholder="en.wikipedia" autocomplete="off" value="en.wikipedia">
-                    </div>
-                    <div class="col-sm-4">
-                      <input type="text" id="categoryForm_categories_2_title" name="categoryForm[categories][2][title]" class="category-input form-control" placeholder="Category name" value="Space">
                     </div>
                     <div class="col-sm-2">
                       <button type="button" class="btn btn-default remove-category form-control">

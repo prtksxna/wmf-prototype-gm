@@ -470,12 +470,17 @@
 
 
         <div class="helperror warn">
-          <h3>Almost there</h3>
+          <h3>Event partially configured</h3>
           <p>
-            The event setup isn’t complete yet. You’ve added categories for <strong>1 wiki</strong>.
+            You will get metrics for some but not all of the wikis specified for the event.
+            <a href="https://meta.wikimedia.org/wiki/Special:MyLanguage/Event_Metrics#adding-participants" title="Read more about how to enter participant usernames" class="help-link" target="_blank">
+              <span class="glyphicon glyphicon glyphicon-question-sign"></span>
+            </a>
             <ul>
-              <li>Add categories for the rest of the Wikis (en, commons).</li>
-              <li>Participants are required for Wikidata.</li>
+              <li>The following wikis require filtering: <strong>English Wikipedia</strong>, <strong>Konkani Wikipedia</strong>.</li>
+              <li>You must provide filtering for every wiki for which you want metrics. </li>
+              <li>Participants filtering applies to all wikis and satisfies all filtering requirements. </li>
+              <li>Category filters are specific to individual wikis. </li>
             </ul>
           </p>
         </div>
@@ -485,13 +490,13 @@
           <div class="panel-heading" role="tab" id="panelHeadingParticipants">
             <h4 class="panel-title">
               <a role="button" data-toggle="collapse" href="#panelBodyParticipants" aria-expanded="false" aria-controls="panelBodyParticipants" title="Hide this section">
-                Participants
+                Participants filter
               </a>
             </h4>
             <div class="panel-description text-right">
-              required for Wikidata
+              No participants supplied
               &nbsp;&nbsp;
-              <span style="color:#d9534f;" class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+              <span style="color:#f0ad4e;" class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
             </div>
           </div>
           <div id="panelBodyParticipants" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="panelHeadingParticipants">
@@ -528,11 +533,11 @@
           <div class="panel-heading" role="tab" id="panelHeadingCategories">
             <h4 class="panel-title">
               <a role="button" data-toggle="collapse" href="#panelBodyCategories" aria-expanded="false" aria-controls="panelBodyCategories" title="Hide this section">
-                Categories
+                Categories filter
               </a>
             </h4>
             <div class="panel-description text-right">
-              2 wikis need categories
+              Categories not supplied for some wikis
               &nbsp;&nbsp;
               <span style="color:#f0ad4e;" class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
             </div>

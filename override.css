@@ -64,6 +64,14 @@
   color: #eea236;
 }
 
+.helperror.error {
+  border-left-color: #d9534f;
+}
+
+.helperror.error h3 {
+  color: #d9534f;
+}
+
 time {
   font-weight: 500;
   font-style: italic;
